@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Swis721 BlkEx BT', serif;
+    color: white;
+    text-align: center;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.econ-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5em;
+    line-height: 0.8em;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+h1:hover .econ {
+    transform: translateY(-15px);
+}
+
+h1:hover .stratagem {
+    transform: translateY(15px);
+}
+
+h1 div {
+    font-size: 2em;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+div.econ {
+    color: white;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 2em;
+    z-index: 2;
+}
+
+.stratagem {
+    color: white;
+    font-size: 2em;
+    z-index: 1;
+}
+
+.matrix-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    width: 100%;
+}
+
+.matrix {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    max-width: 1800px;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    padding-top: 47.5%;
+    background-color: #3498db;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.3s ease, width 0.5s ease; 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .box:hover {
+    transform: scale(1.1) translate(-50%, -50%);
+    width: 100%; 
+} */
+
+/* .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.box:hover::before {
+    opacity: 1;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    z-index: 999;
+    transition: transform 0.5s ease, opacity 0.3s ease, top 0.5s ease, left 0.5s ease; 
+    opacity: 0;
+}
+
+.box:hover::after {
+    transform: translate(-50%, -50%) scale(1.1); 
+    opacity: 1;
+    top: 50%; 
+    left: 50%; 
+} */
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1000px;
+    margin-top: -50px;
+    margin-bottom: -150px;
+}
+
+.l1 img
+{
+    width:50%;
+    height:60%
+}
+.l2 img
+{
+    width:30%;
+    height:40%
+}
+.section-header .section-title {
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .section-header .section-description {
+    text-align: center;
+    padding-bottom: 40px;
+    color: #999;
+  }
+  .section-title
+  {
+    font-size: 30px;
+    color: white;
+    z-index: 99;
+  }
+  .button
+  {
+    position: absolute;
+    left:77%;
+    top:90%;
+    width: 200px; /* Set the width of the button */
+    height: 70px; /* Set the height of the button */
+    border: 3px solid #020343; /* Add a border to the button */
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  @media(min-width:254px) and (max-width:750px)
+  {
+     
+    h1 {
+        font-size: 1.5em;
+        line-height: 0.8em;
+        margin: 0;
+        transition: transform 0.3s ease;
+    }
+ 
+    
+    
+    .matrix-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: black;
+        width: 100%;
+        
+    }
+    
+    .matrix {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns:repeat(1,1fr);
+        gap: 5px;
+        max-width: 390px;
+        width: 100%;
+        
+    }
+    
+   
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 150px;
+        margin-top: -5px;
+        margin-bottom: -150px;
+    }
+    
+    
+  
+  
+      .button
+      {
+        position: absolute;
+        left:27%;
+        top:60%;
+        width: 150px; /* Set the width of the button */
+        height: 50px; /* Set the height of the button */
+        border: 3px solid #020343; /* Add a border to the button */
+        border-radius: 5px;
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .l1 img
+{
+    width:70%;
+    height:80%
+}
+.l2 img
+{
+    width:50%;
+    height:50%
+}
+      
+    
+  }
+  @media(min-width:750px) and (max-width:1000px)
+  {
+    h1 {
+        font-size: 2em;
+        line-height: 0.8em;
+        margin: 0;
+        transition: transform 0.3s ease;
+    }
+ 
+    
+    
+    .matrix-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: black;
+        width: 100%;
+        
+    }
+    
+    .matrix {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns:repeat(1,1fr);
+        gap: 5px;
+        max-width: 650px;
+        width: 100%;
+        
+    }
+    
+   
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 150px;
+        margin-top: -5px;
+        margin-bottom: -150px;
+        margin-left:50px;
+    }
+    
+    
+  
+  
+      .button
+      {
+        position: absolute;
+        left:38%;
+        top:80%;
+        width: 200px; /* Set the width of the button */
+        height: 70px; /* Set the height of the button */
+        border: 3px solid #020343; /* Add a border to the button */
+        border-radius: 5px;
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }}
+  

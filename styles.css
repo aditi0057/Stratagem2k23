@@ -84,6 +84,9 @@ div.econ {
     position: relative;
     overflow: hidden;
 }
+.box:hover {
+    transform: scale(1.1);
+}
 
 .logo {
     display: flex;
@@ -101,7 +104,7 @@ div.econ {
 
 .l2 img {
     width: 45%; /* Adjust the width as needed */
-    height: 55%; /* Adjust the height proportionally */
+    height: 55%; 
 }
 
 /* Adjust the margin and spacing as needed */
@@ -156,14 +159,21 @@ div.econ {
 
 .button {
     position: relative;
-    bottom: 100px;
-    margin-left: 55%;
+    bottom: 200px;
     width: 180px;
     height: 70px;
     border: 3px solid #020343;
     border-radius: 5px;
     font-size: 18px;
     font-family: 'Swis721 BlkEx BT', serif;
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition for the click animation */
+}
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: scale(0.9); /* Adjust the scale as needed for the click effect */
 }
 
 @media (min-width: 254px) and (max-width: 750px) {
@@ -212,6 +222,14 @@ div.econ {
         border-radius: 5px;
         font-size: 25px;
         font-family: 'Swis721 BlkEx BT', serif;
+        transition: transform 0.2s ease-in-out; /* Add a smooth transition for the click animation */
+    }
+    .button:hover {
+        transform: scale(1.1);
+    }
+    
+    .button:active {
+        transform: scale(0.9); /* Adjust the scale as needed for the click effect */
     }
 
     .l1 img {
@@ -272,5 +290,13 @@ div.econ {
         border-radius: 5px;
         font-size: 25px;
         font-family: 'Swis721 BlkEx BT', serif;
+        transition: transform 0.2s ease-in-out; /* Add a smooth transition for the click animation */
+    }
+    .button:hover {
+        transform: scale(1.1);
+    }
+    
+    .button:active {
+        transform: scale(0.9); /* Adjust the scale as needed for the click effect */
     }
 }
